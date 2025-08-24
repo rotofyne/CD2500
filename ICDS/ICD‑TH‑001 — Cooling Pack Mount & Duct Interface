@@ -1,0 +1,41 @@
+Parent: TH‑701/702/703/704 CSYS: Cooling_Bay (origin at bay center; X fwd, Z up)
+Datums: A=bay rear frame • B=LH frame • C=bottom shelf
+
+A. Mechanical / Mounting
+Feature	Requirement
+Mount frame	4‑point isolation mounts M8‑1.25, spacing 380×260 mm (param: bays.cooling_mm)
+Core envelopes	Radiator face ≥0.186 m² [≥2.0 ft²]; oil cooler ≥0.111 m² [≥1.2 ft²]; hyd cooler as sized
+Duct flanges	Inlet/outlet rectangular flanges with M6 perimeter at 80 mm pitch; neoprene gasket 3 mm
+Fan rings	2× circular rings Ø305 mm [12 in]; M6 on 4‑bolt pattern; guard mesh removable
+Service access	Tool‑less screen removal; min 25 mm hand clearance all sides
+B. Fluids / Sensors / Electrical
+
+Coolant hose barbs: AN‑16 (1.0 in); oil cooler: AN‑8; hyd return: AN‑6; orientation to B plane ±5°.
+
+Sensors: Temp (M10×1.0), ΔP ports (1/8‑NPT) across radiator and oil cooler.
+
+Fans: 28 VDC, 2‑wire; each ≤12 A; M8 circular connector or equivalent IP‑rated.
+
+C. Performance Targets
+
+Hover (ISA+20): coolant outlet ≤105 °C; oil ≤120 °C; hyd return ≤80 °C.
+
+ΔP limits: radiator ≤15 mbar @ design flow; oil cooler ≤20 mbar.
+
+D. Parameter Bindings
+
+bays.cooling_mm.x/y/z, cooling.radiator_area_m2, cooling.oil_area_m2, cooling.fan_D_mm, cooling.deltaP_limits
+
+E. Deliverables
+
+CAD + STEP; duct/flange drawings; ΔP vs flow curves; fan curve & current; leak/pressure reports.
+
+F. Acceptance Tests
+
+Pressure/leak: radiator & oil circuits 1.5× cap pressure, 10 min, zero leaks.
+
+Fan test: free‑air current & locked‑rotor protection; vibration check.
+
+ΔP/ΔT bench: achieve curves; shroud flow visualization ok.
+
+Assumptions & Notes: Downwash capture shroud per Rev‑C geometry; screens cleanable in field.
