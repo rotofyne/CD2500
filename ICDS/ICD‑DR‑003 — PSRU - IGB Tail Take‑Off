@@ -1,0 +1,32 @@
+Parent: DT‑507 / TR‑301 CSYS: IGB_CSYS (origin at take‑off flange center, X→shaft)
+Datums: A=flange face • B=top ear • C=right ear
+
+A. Mechanical Interface
+Feature	Requirement
+Flange pattern	6× M8‑1.25 on Ø80 mm B.C.; spotface Ø14 mm
+Pilot	Ø25 mm h7, length 8 mm; coaxiality ≤0.03 mm
+Shaft spec	Ø 18 mm keyed 6×6×20 or splined (supplier option)
+Speed / power	2,700–3,000 rpm nominal; ≥25 kW continuous, 60–80 kW for 10 s
+Radial/axial limits	Max radial load at flange ≤500 N; axial ≤300 N
+Keep‑out	Ø140×90 mm from A; no protrusions into belt guard zones
+B. Lubrication & Sealing
+
+Flange face Ra ≤1.6 µm; nitrile gasket 2.0 mm or O‑ring option (Ø2.4 mm). Vent/bleed via IGB port.
+
+C. Parameter Bindings
+
+tail_bus.power_kw_cont, tail_bus.power_kw_peak, drivetrain.tail_takeoff_rpm, interfaces.igb_bolt_pattern
+
+D. Deliverables
+
+CAD + STEP; drawing; balance card (ISO G2.5 or better at 3,000 rpm); mass CSV.
+
+E. Acceptance Tests
+
+Dimensional/CMM: pilot & B.C. positions to A|B|C.
+
+Spin test @ 3,000 rpm, 60 min: bearing temps stable; NVH within spec.
+
+Power test: 25 kW continuous, 10 min; 60 kW 10 s; no fretting at flange.
+
+Assumptions & Notes: Shaft detail (key vs spline) finalized with IGB supplier; adapters allowed if tolerances held.
