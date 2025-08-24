@@ -1,0 +1,37 @@
+Parent: HY‑601 / RS‑205 CSYS: Swash_CSYS (origin at swash center, Z up along mast)
+Datums: A=servo pad face • B=vertical rib plane • C=lower edge
+
+A. Mechanical / Mounting
+Feature	Requirement
+Servo body mount	4× M8‑1.25 on 60×40 mm rectangle (slots 9×14 mm to allow ±1 mm trim); pad flatness ≤0.05 mm
+Clevis pin	Ø10.00 mm h6, through‑bushed; centerline from pad plane: 45.0 mm
+Stroke & load	±44.5 mm [±1.75 in] stroke; ≥11.1 kN [2,500 lbf] force; ≥15 Hz effective bandwidth with linkage
+Anti‑rotation	Bracket M6 pair, slot ±3 mm; resin‑bonded nutplates allowed
+Geometry	120° spacing around mast; clevis misalignment ±2° allowed with spherical rod‑end
+B. Hydraulics (each servo)
+
+Ports: P/T = ‑6 ORB, case drain = ‑4 ORB.
+
+Max working pressure: 13.8 MPa [2,000 psi]; proof 1.5×.
+
+Cleanliness: NAS‑1638 Class 7 or better.
+
+C. Parameter Bindings
+
+controls.servo_stroke_mm, controls.servo_force_N, controls.servo_BW_hz, hydraulics.pressure_psi, interfaces.swash_mount_rect_mm
+
+D. Deliverables
+
+CAD + STEP; drawing with GD&T on pad; FRF test plan; mass CSV.
+
+E. Acceptance Tests
+
+Dimensional: pad flatness, hole true‑position ⌀0.10 mm.
+
+Load test: static 1.5× rated force for 10 s, no yield.
+
+Hydraulic proof: 1.5× max working pressure, 5 min, leak‑free.
+
+FRF check (iron‑bird): ≥15 Hz closed‑loop with linkage mass.
+
+Assumptions & Notes: Servo P/N Buy; mounts/clevis/pins Make; access clearances maintained by airframe doors.
