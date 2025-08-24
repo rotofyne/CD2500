@@ -1,0 +1,34 @@
+Parent: EE‑803 / EE‑804 CSYS: Avionics_Bay (PDU) & SB175_CSYS (shore panel)
+Datums: A=PDU plate face • B=LH edge • C=bottom edge
+
+A. Mechanical / Mounting
+Feature	Requirement
+PDU plate	M6 6‑point mount on 220×160 mm rectangle; copper bus bars insulated; edge radius ≥1.0 mm
+Studs	Main bus studs 3/8‑16 (2×), aux studs 1/4‑20 (2×); torque labels
+Shore panel	Anderson SB175 cutout per mfr drawing; panel M6 × 4; keyed orientation: positive on ACS‑up side
+Keep‑out	Cable bend radius: ≥8× OD; gland plate behind panel with IP splash rating
+B. Electrical
+
+System bus: 28 VDC, normal ≤100 A; transient load dump per DO‑160‑like profile (define in spec).
+
+Protection: master contactor (≥150 A), essential/non‑essential bus contactors; fuses/CBs per load table.
+
+Ground/bond: straps to structure <2.5 mΩ; label points.
+
+C. Parameter Bindings
+
+electrical.bus_28v_max_A, electrical.shore_SB175, ee.pdu_mount_rect_mm, ee.bus_stud_sizes
+
+D. Deliverables
+
+CAD + STEP; panel drawing; wiring one‑line; Hi‑Pot and contact resistance reports.
+
+E. Acceptance Tests
+
+Hi‑Pot: 500 VDC, 60 s PDU to structure, ≤2 mA leakage.
+
+Contact resistance: each bus stud ≤100 µΩ after torque.
+
+Shore power: 100 A continuous 15 min, SB175 temp rise <30 °C.
+
+Assumptions & Notes: DO‑160 full compliance not required initially; design to best practice; clearly mark polarity at SB175.
