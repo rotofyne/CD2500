@@ -1,0 +1,34 @@
+Parent: PL‑1105 / PL‑1106 CSYS: PL_Fill_CS / PL_Rinse_CS (panel origins at port centers)
+Datums: A=panel face • B=lower edge • C=LH edge
+
+A. Mechanical / Panel Features
+Feature	Requirement
+Fill port	1.5″ cam‑lock female dry‑break; panel cut‑out per vendor; 6× M6 on Ø76 mm B.C.; gasket groove 3×3 mm
+Rinse return	0.5″ cam‑lock; 4× M5 on Ø45 mm B.C.
+Panel plate	5052‑H32 t=2.5 mm; edge hem optional; drain notch; labels “FILL/RINSE” laser‑etch
+Grounding	M6 ground lug within 50 mm; bond <2.5 mΩ
+B. Performance / Fluids
+
+Fill rate: ≥227 L/min [≥60 gpm]; Rinse: 38–76 L/min [10–20 gpm].
+
+Chem compatibility: wetted materials Viton/PTFE/SS316.
+
+Purge: line purge ≤90 s at rinse flow.
+
+C. Parameter Bindings
+
+spray.fill_BC_D_mm, spray.rinse_BC_D_mm, spray.flow_fill_gpm, spray.flow_rinse_gpm
+
+D. Deliverables
+
+CAD + STEP; panel drawings; pressure/leak test; flow bench card.
+
+E. Acceptance Tests
+
+Hydrostatic: 1.25× working pressure, 5 min, no leaks.
+
+Flow: achieve ≥60 gpm fill to test tank @ specified head; rinse ≥10 gpm.
+
+Purge: ≤90 s to clean water at outlet.
+
+Assumptions & Notes: Quick‑disconnect couplers to be keyed; color‑coded caps recommended.
