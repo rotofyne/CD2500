@@ -1,0 +1,36 @@
+Title / Code: ICD-<WBS>-### — <Interface Name>
+Parent Assy: <Assembly / WBS> Version: v1.0 Status: Pre‑Release
+Coordinate Systems (CSYS): <Named CSYS in skeleton> with ACS: X fwd, Y right, Z up
+Primary Datums: A (mount face) • B (longitudinal edge/plane) • C (lower edge/plane)
+
+A. Mechanical Interface
+Feature	Requirement
+Mount pattern	<count>× on ØBC=<param> mm [<inch>], hole Ø/threads <spec>; positional tol ⌀0.10 mm @ MMC to datums A
+Pilots / Bosses	Pilot Ø <param> H7 × length <param>; coaxiality ≤0.05 mm to axis
+Flatness & perpendicularity	A flatness ≤0.05 mm; B⊥A ≤0.05 mm; C∥A ≤0.05 mm
+Keep‑out envelope	L×W×H <X×Y×Z param>; no intrusion; service access <clearance>
+Materials & finish (mating)	<alloy/spec>; finish <anodize/zinc-nickel/etc.>; edges deburred R0.5 min
+Loads & ratings	Continuous <value>; 10 s peak <value>; mass ≤ <value>
+B. Fluid / Electrical (as applicable)
+
+Ports: <type/size> (e.g., ORB‑6, AN‑8, 1/4‑NPT); orientation callouts.
+
+Connector(s): <family + keying>; pinout table; strain relief; ground/bonding req.
+
+C. Parameter Bindings (read‑only from master.yaml / Variable Studio)
+
+<Param_Name_1>, <Param_Name_2>, … (no hard‑coded dims)
+
+D. Deliverables (from vendor)
+
+Native CAD + STEP AP242 • Drawing/PMI w/ GD&T • Mass properties CSV (mass, CG xyz, Ixx/Iyy/Izz) • CMM/P/ΔP/pressure reports as listed.
+
+E. Acceptance Tests (pass/fail)
+
+Dimensional: CMM on <features> within tolerances.
+
+Functional: <spin/load/leak> tests @ conditions.
+
+Environmental: splash/temperature/vibration checks if noted.
+
+Assumptions & Notes: List any allowed substitutions, surface protections, chemical compatibility, or TBD flags.
