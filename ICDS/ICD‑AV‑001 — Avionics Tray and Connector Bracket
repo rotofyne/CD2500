@@ -1,0 +1,32 @@
+Parent: AV‑901/902/906/907 CSYS: Avionics_Bay (origin at tray front‑left corner)
+Datums: A=tray top surface • B=front edge • C=left edge
+
+A. Mechanical / Mounting
+Feature	Requirement
+Tray	5052‑H32 t=2.0 mm; M5 mount holes on 180×120 mm rectangle; optional DZUS rails if specified
+Payload	Max equipment mass on tray ≤6.0 kg; CG within ±25 mm of tray center
+Connector bracket	Right‑angle panel with cutouts for 2× D‑Sub 25, 1× RJ45, 1× circular M12; M3 hardware
+Isolation	4× elastomer isolators (M5 studs), 50–70 ShA; tray FRF > 80 Hz target
+B. Electrical / EMI
+
+Star ground lug M5; bond to structure <2.5 mΩ; EMI gasket on bracket as needed.
+
+Cable bend radius ≥8× OD; strain‑relief bars on cable bundle.
+
+C. Parameter Bindings
+
+avionics.tray_mount_rect_mm, avionics.max_payload_kg, avionics.connector_cutouts
+
+D. Deliverables
+
+CAD + STEP; tray/bracket drawings; mass CSV; vibration test plan; bonding resistance record.
+
+E. Acceptance Tests
+
+Dimensional: hole TP ⌀0.10 mm to A|B|C; connector cutouts per spec gauges.
+
+Bonding: ≤2.5 mΩ tray to structure.
+
+Vibe (bench): tray+3 kg dummy: no resonance < 60 Hz; no fretting after 30 min random vibe (benchtop check).
+
+Assumptions & Notes: Final connector families to follow avionics BOM; allow blanking plates for unused cutouts.
