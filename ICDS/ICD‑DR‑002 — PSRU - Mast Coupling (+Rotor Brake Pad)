@@ -1,0 +1,37 @@
+Parent: DT‑502/503/504 CSYS: PSRU_Out_CSYS (origin at mast pilot, X→mast axis)
+Datums: A=PSRU output face • B=LH mount pad • C=lower pad
+
+A. Mechanical Interface
+Feature	Requirement
+Mast seat & pilot	Seat Ø 88.90 mm [3.500 in] (mast OD), pilot depth 12 mm; coaxiality ≤0.03 mm to axis
+Spline (TBD)	Placeholder: 30T, 16/32DP involute, fit class K; keyless clamp collar
+Fastening	Clamp collar M10‑1.5 (x6) on Ø155 mm; torque 40 N·m; witness marks required
+Output speed	430 rpm nominal
+Torque ratings	≥4,750 N·m (3,500 lbf·ft) continuous, 7,125 N·m (5,250 lbf·ft) proof (10 s)
+Overrunning clutch	Integrated; back‑drive drag ≤10 N·m at 430 rpm; freewheel threshold ≤ 0.5% overspeed
+Rotor brake disc	Disc Ø 305 mm [12.0 in], thickness 6.0 mm [0.24 in]; 6× M8‑1.25 on Ø180 mm to PSRU cover
+Caliper bracket	2× M10‑1.5 to PSRU boss; pad sweep fully on disc; clearance to housing ≥3 mm
+Flatness & position	A flatness ≤0.03 mm; spline pitch dia runout ≤0.02 mm
+B. Sensors / Provisions
+
+Speed pickup port M12×1.0 with 0.8 mm tooth target gap; torque meter port M14×1.5 (plugged).
+
+C. Parameter Bindings
+
+drivetrain.mast_od_in, drivetrain.psru_out_rpm, drivetrain.psru_torque_lbf_ft_cont, drivetrain.orc_drag_Nm, drivetrain.brake_disc_D_mm
+
+D. Deliverables
+
+CAD + STEP; drawing/PMI with spline data sheet; brake disc drawing; ORC drag curve; stop‑time calc; mass CSV.
+
+E. Acceptance Tests
+
+Spline gage fit; blueing check ≥85% contact.
+
+ORC drag test @ 430 rpm: ≤10 N·m.
+
+Brake stop from idle Nr to 0 ≤ 15 s ×3 cycles; inspect for fade/heat spotting.
+
+Proof torque 7,125 N·m hold 10 s; no permanent deformation.
+
+Assumptions & Notes: Spline form finalized after supplier DFM; disc Ø can grow if caliper family changes.
