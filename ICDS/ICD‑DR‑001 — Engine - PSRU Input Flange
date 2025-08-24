@@ -1,0 +1,37 @@
+Parent: DT‑501/DT‑502 Drivetrain CSYS: PSRU_In_CSYS (origin at pilot center, X→shaft, Z up)
+Datums: A=mount face • B=top pad edge • C=right pad edge
+
+A. Mechanical Interface
+Feature	Requirement
+Bolt circle	6× on Ø127.00 mm [Ø5.000 in] B.C.; threads 3/8‑24 UNF, min full thread 19.1 mm [0.75 in]; spotface Ø11.0 mm
+Pilot	Ø50.80 mm [Ø2.000 in] H7, length 9.5 mm [0.375 in] into PSRU cover; coaxiality ≤0.05 mm to shaft axis
+Dowel pins	2× Ø6 mm on chord, ±0.01 positional, depth 8 mm
+Face flatness & TIR	A flatness ≤0.04 mm; pilot TIR on input shaft ≤0.04 mm [0.0015 in]
+Speed/torque ratings	Input speed ≤ 5,500 rpm; 350 lbf·ft (474 N·m) cont, 500 lbf·ft (678 N·m) for 10 s; proof torque 1.5× peak
+Keep‑out	Ø230×80 mm axial envelope from A; no protrusions
+Materials/finish	Engine side: steel/aluminum per engine spec; PSRU cover: A356‑T6 w/ alodine
+B. Fluids / Sealing
+
+Face seal with Ø2.5 mm section O‑ring (AS568‑xxx), groove on PSRU side; surface Ra ≤ 1.6 µm.
+
+No oil transfer across interface; vent paths external.
+
+C. Parameter Bindings
+
+engine_psru.bolt_circle_in, engine_psru.bolts, engine_psru.thread, engine_psru.pilot_in, drivetrain.input_max_rpm, drivetrain.psru_torque_lbf_ft_cont
+
+D. Deliverables
+
+CAD (native + STEP), drawing with GD&T of A|B|C, CMM report for pilot and B.C., torque proof test card.
+
+E. Acceptance Tests
+
+Dimensional: CMM pilot Ø and position, B.C. position ⌀0.10 mm to A|B|C.
+
+Runout: Measure input hub TIR at 2× pilot length: ≤0.04 mm.
+
+Torque proof: 750 lbf·ft (1.5× peak) static hold 10 s, no slip/damage.
+
+Leak check: O‑ring groove dye‑penetrant; surface finish audit.
+
+Assumptions & Notes: Engine pad pattern per automotive donor adapter; orientation key at dowel #1 (clocking 0° to B).
